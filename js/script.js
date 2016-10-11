@@ -3,7 +3,7 @@ function submitForm() {
     e.preventDefault();
   })
 
-  var token = "6de89332863b8a7a1bfb06c3c95e2f6da3c75786";
+  var token = ENV["GITHUB_TOKEN"];
   var repo = $("#repoName").val();
   var user = $("#repoOwner").val();
   var title = $("#title").val();
